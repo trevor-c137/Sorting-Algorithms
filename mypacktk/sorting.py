@@ -17,13 +17,24 @@ def bubble_sort(items):
             if items[j] > items[j+1]:
                 items[j], items[j+1] = items[j+1], items[j]
     return items
+def linear_merge(list1, list2):
+    new_listk = list1+list2 
+    for a in range(len(new_listk)):
+        for b in range(len(new_listk)-1-a):
+            if new_listk[b] > new_listk[b+1]:
+                new_listk[b], new_listk[b+1] = new_listk[b+1], new_listk[b] 
+    return new_listk
+def merge_sort(items):
 
-def merge_sort(list1):
-    for a in range(len(list1)):
-        for b in range(len(list1)-1-a):
-            if list1[b] > list1[b+1]:
-                list1[b], list1[b+1] = list1[b+1],list1[b]
-    return list1
+    dist = len(items)
+    if dist == 1:
+        return items
+
+    mid_v = int(dist / 2)
+    list1 = merge_sort(items[:mid_v])
+    list2 = merge_sort(items[mid_v:])
+
+    return linear_merge(list1, list2)
 
 
 def quick_sort(items,index=-1):
