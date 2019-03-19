@@ -18,7 +18,7 @@ def bubble_sort(items):
                 items[j], items[j+1] = items[j+1], items[j]
     return items
 
-def linear_merge(list1):
+def merge_sort(list1):
     for a in range(len(list1)):
         for b in range(len(list1)-1-a):
             if list1[b] > list1[b+1]:
@@ -26,7 +26,7 @@ def linear_merge(list1):
     return list1
 
 
-def quick_sort(items):
+def quick_sort(items,index=-1):
 
     """
      quick sort algorithm takes an unsorted list of numbers.
@@ -51,7 +51,7 @@ def quick_sort(items):
     #index number at which to choose the split value
 
 
-    index=-1
+    
 
     if len(items) <= 1:
         return items
