@@ -24,7 +24,7 @@ mypacktk which uses some recursion functions and sorting functions
 ' python setup.py sdist '
 
 ## installing this package from github
-'pip install package+https://github.com/K1TS/mypackage.git   '
+'pip install package+https://github.com/K1TS/mypacktk.git   '
 
 ## updating this package from github
-'pip install --upgrade git +https://github.com/K1TS/mypackage.git'
+'pip install --upgrade git +https://github.com/K1TS/mypacktk.git'

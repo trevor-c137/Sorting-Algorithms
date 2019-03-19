@@ -8,7 +8,7 @@ setup(
     description='EDSA example python package',
     long_description=open('README.md').read(),
     install_requires=['numpy'],
-    url='https://github.com/K1TS/mypackage.git',
+    url='https://github.com/K1TS/mypacktk.git',
     author='TREVOR SENYANE',
     author_email='makhiler@gmail.com'
 )
