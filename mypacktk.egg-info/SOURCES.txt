@@ -1,0 +1,10 @@
+README.md
+setup.py
+mypacktk/__init__.py
+mypacktk/recursion.py
+mypacktk/sorting.py
+mypacktk.egg-info/PKG-INFO
+mypacktk.egg-info/SOURCES.txt
+mypacktk.egg-info/dependency_links.txt
+mypacktk.egg-info/requires.txt
+mypacktk.egg-info/top_level.txt
